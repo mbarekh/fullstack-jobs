@@ -40,8 +40,8 @@ export function CompanyCard({ companyInfo }: { companyInfo: CompanyInfo }) {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-100/70 to-transparent" />
 
       <div className="relative flex flex-wrap items-start justify-between gap-4">
-        <div className="flex min-w-0 items-start gap-4">
-          <div className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white p-2 shadow-lg shadow-slate-950/20">
+        <div className="flex min-w-0 items-center gap-4">
+          <div className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white p-2 shadow-lg shadow-slate-950/20">
             <Image
               src={`/api/company-logo/${encodeURIComponent(`${companyInfo.id}.png`)}`}
               alt={`${companyInfo.name} logo`}
