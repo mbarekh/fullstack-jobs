@@ -8,6 +8,7 @@ export const fetchApi = {
   }: {
     url: string;
     shouldParse?: boolean;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     params?: Record<string, any>;
   }): Promise<{ data: T; headers: Headers }> => {
     const urlWithParams = getUrlWithParams({ url, params });
@@ -23,6 +24,7 @@ export const fetchApi = {
     payload,
   }: {
     url: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     payload?: Record<string, any>;
   }): Promise<{ data: T; headers: Headers }> => {
     const response = await fetch(url, {

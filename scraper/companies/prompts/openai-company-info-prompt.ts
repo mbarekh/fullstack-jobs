@@ -2,7 +2,6 @@ import {
   sizes,
   industries,
   technologies,
-  forbiddenIndustries,
   customerTypes,
 } from "../../model/companies-model";
 import { randomNumber } from "../../utils/extra-utils";
