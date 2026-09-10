@@ -8,7 +8,11 @@ import { MapPinIcon } from "./icons/map-pin-icon";
 import { MoneyIcon } from "./icons/money-icon";
 import { MetaItem } from "./meta-item";
 import { companiesInfo } from "../data";
-import { CATEGORIES_MAP, SENIORITY_MAP } from "@/scraper/jobs/map/job-info-map";
+import {
+  CATEGORIES_MAP,
+  SENIORITY_MAP,
+  SKILLS_MAP,
+} from "@/scraper/jobs/map/job-info-map";
 
 const getCompanyName = (companyId: string) => {
   const company = companiesInfo.find(({ id }) => id === companyId);
@@ -161,14 +165,16 @@ export function JobCard({
           Key skills
         </p>
         <div className="flex flex-wrap gap-2">
-          {jobListing.skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs font-semibold text-slate-200"
-            >
-              {skill}
-            </span>
-          ))}
+          {jobListing.skills
+            .filter((skill) => SKILLS_MAP[skill])
+            .map((skill) => (
+              <span
+                key={skill}
+                className="rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs font-semibold text-slate-200"
+              >
+                {SKILLS_MAP[skill].label}
+              </span>
+            ))}
         </div>
       </div>
 
