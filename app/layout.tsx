@@ -14,8 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fullstackjobs.dev"),
   title: "Fullstack Jobs",
-  description: "Curated fullstack jobs and companies",
+  description:
+    "Curated fullstack engineering jobs with compensation, work setup, and tech-stack insights.",
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Fullstack Jobs",
+    title: "Fullstack Jobs",
+    description:
+      "Curated fullstack engineering jobs with compensation, work setup, and tech-stack insights.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fullstack Jobs",
+    description:
+      "Curated fullstack engineering jobs with compensation, work setup, and tech-stack insights.",
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function RootLayout({

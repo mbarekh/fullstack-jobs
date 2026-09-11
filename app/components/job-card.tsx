@@ -10,6 +10,7 @@ import { MetaItem } from "./meta-item";
 import { companiesInfo } from "../data";
 import {
   CATEGORIES_MAP,
+  LOCATIONS_MAP,
   SENIORITY_MAP,
   SKILLS_MAP,
 } from "@/scraper/jobs/map/job-info-map";
@@ -36,15 +37,30 @@ const getLocationSummary = (
       case "worldwide":
         return "Worldwide";
       case "businessRegion":
-        return location.businessRegion;
+        return (
+          LOCATIONS_MAP[location.businessRegion as keyof typeof LOCATIONS_MAP]
+            ?.label ?? location.businessRegion
+        );
       case "continent":
-        return location.continent;
+        return (
+          LOCATIONS_MAP[location.continent as keyof typeof LOCATIONS_MAP]
+            ?.label ?? location.continent
+        );
       case "country":
-        return location.country;
+        return (
+          LOCATIONS_MAP[location.country as keyof typeof LOCATIONS_MAP]
+            ?.label ?? location.country
+        );
       case "state":
-        return location.state;
+        return (
+          LOCATIONS_MAP[location.state as keyof typeof LOCATIONS_MAP]?.label ??
+          location.state
+        );
       case "city":
-        return location.city;
+        return (
+          LOCATIONS_MAP[location.city as keyof typeof LOCATIONS_MAP]?.label ??
+          location.city
+        );
       default:
         return "";
     }
