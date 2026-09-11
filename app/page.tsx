@@ -15,8 +15,7 @@ export default function Home() {
             Fullstack Jobs
           </p>
           <h1 className="mt-4 text-2xl font-semibold leading-tight text-slate-100 sm:text-4xl">
-            Curated engineering roles with clear signals on pay, scope, and
-            stack.
+            Developers roles with insight into salary, scope, and stack.
           </h1>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
             Browse hand-normalized opportunities from ambitious teams. Every

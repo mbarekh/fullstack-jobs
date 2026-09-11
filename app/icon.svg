@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Fullstack Jobs</title>
+  <rect x="1.5" y="1.5" width="37" height="37" rx="8.5" fill="#050914" stroke="#A5F3FC" stroke-opacity=".55" stroke-width="1.5"/>
+  <path d="m12 13-5.5 7 5.5 7M28 13l5.5 7-5.5 7" stroke="#CFFAFE" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m21 13-3.5 14" stroke="#67E8F9" stroke-opacity=".8" stroke-width="2.25" stroke-linecap="round"/>
+</svg>

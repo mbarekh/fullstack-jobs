@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -30,9 +31,16 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-8">
         <Link
           href="/"
-          className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-100 sm:text-sm"
+          aria-label="Fullstack Jobs"
+          className="block transition-opacity hover:opacity-90"
         >
-          Fullstack Jobs
+          <Image
+            src="/logo.svg"
+            alt="Fullstack Jobs"
+            width="220"
+            height="40"
+            className="h-8 w-auto origin-left scale-[1.35]"
+          />
         </Link>
 
         <nav className="flex items-center gap-1.5 rounded-2xl border border-white/10 bg-white/[0.03] p-1.5">
