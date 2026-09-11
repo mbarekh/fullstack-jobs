@@ -15,7 +15,7 @@ export default function CompaniesPage() {
             Companies
           </p>
           <h1 className="mt-4 text-2xl font-semibold leading-tight text-slate-100 sm:text-4xl">
-            Product companies actively hiring software talent.
+            Tech companies actively hiring software talent.
           </h1>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
             Explore enriched company profiles from the scraper dataset. Compare

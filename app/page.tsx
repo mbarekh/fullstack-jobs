@@ -15,7 +15,7 @@ export default function Home() {
             Fullstack Jobs
           </p>
           <h1 className="mt-4 text-2xl font-semibold leading-tight text-slate-100 sm:text-4xl">
-            Developers roles with insight into salary, scope, and stack.
+            Developers jobs with insight into salary, scope, and stack.
           </h1>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
             Browse hand-normalized opportunities from ambitious teams. Every
@@ -25,7 +25,7 @@ export default function Home() {
 
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
             <span className="rounded-xl border border-emerald-200/20 bg-emerald-200/10 px-3 py-1.5 font-semibold text-emerald-100">
-              {jobsInfo.length} active roles
+              {jobsInfo.length} active jobs
             </span>
             <span className="rounded-xl border border-slate-300/20 bg-slate-200/10 px-3 py-1.5 font-medium text-slate-300">
               Dark mode optimized
